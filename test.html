@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bottom Start Scrolling</title>
+<style>
+  /* Ensures the body takes full height of the viewport */
+  html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  /* Container to hold the content */
+  #container {
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse; /* Stacks content from bottom */
+  }
+
+  /* Simulating content */
+  .content {
+    height: 2000px; /* Adjust according to your content */
+    background: linear-gradient(to bottom, #e66465, #9198e5);
+  }
+</style>
+</head>
+<body>
+<div id="container">
+    <h1>Tittel</h1>
+  <div class="content">
+    <section class="videosection">
+        <p>Dette er beskrivelsen for denne videoen</p>
+        <div class="videosize">
+                <div class="videowrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xIU_azQlUMI?si=ujCFaWTgqBRiK9eM&amp;start=79" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+        </div>
+    </section>
+  </div>
+  <div class="content">
+    <section class="videosection">
+        <p>Dette er beskrivelsen for denne videoen</p>
+        <div class="videosize">
+                <div class="videowrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xIU_azQlUMI?si=ujCFaWTgqBRiK9eM&amp;start=79" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+        </div>
+    </section>
+  </div>
+  <div class="content">
+    <section class="videosection">
+        <p>Dette er beskrivelsen for denne videoen</p>
+        <div class="videosize">
+                <div class="videowrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xIU_azQlUMI?si=ujCFaWTgqBRiK9eM&amp;start=79" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+        </div>
+    </section>
+  </div>
+</div>
+
+<script>
+  // JavaScript to ensure the container starts at the bottom
+  document.getElementById('container').scrollTop = document.getElementById('container').scrollHeight;
+</script>
+</body>
+</html>
