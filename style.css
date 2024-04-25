@@ -25,10 +25,12 @@ main{
     max-width: min(90%,1200px);
     margin-inline: auto;
     display: grid;
-    gap: 2rem;
     margin-block: 2rem;
     background: var(--second);
-
+}
+main > *{
+    padding-block: 3rem;
+    padding-inline: 1rem;
 }
 
 /*Text*/
@@ -58,8 +60,6 @@ blockquote{
 
 .videosection{
     display: grid;
-    gap: 1rem;
-    padding: 1rem;
 }
 .videosection + .videosection, .videosection + article, article + .videosection {
     border-top: 2px solid var(--tri);
